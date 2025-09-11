@@ -1,6 +1,6 @@
 [
     {
-        "name": "Joh Allen",
+        "name": "Josh Allen",
         "position": "QB",
         "projPts": 22.4
     },
@@ -10,14 +10,164 @@
         "projPts": 21.8
     },
     {
+        "name": "Jalen Hurts",
+        "position": "QB",
+        "projPts": 21.5
+    },
+    {
+        "name": "Lamar Jackson",
+        "position": "QB",
+        "projPts": 20.8
+    },
+    {
+        "name": "Joe Burrow",
+        "position": "QB",
+        "projPts": 19.9
+    },
+    {
+        "name": "Justin Herbert",
+        "position": "QB",
+        "projPts": 19.7
+    },
+    {
+        "name": "Dak Prescott",
+        "position": "QB",
+        "projPts": 18.9
+    },
+    {
+        "name": "Tua Tagovailoa",
+        "position": "QB",
+        "projPts": 18.5
+    },
+    {
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "projPts": 18.3
+    },
+    {
         "name": "Christian McCaffrey",
         "position": "RB",
         "projPts": 20.1
     },
     {
+        "name": "Bijan Robinson",
+        "position": "RB",
+        "projPts": 17.4
+    },
+    {
         "name": "Saquon Barkley",
         "position": "RB",
         "projPts": 16.8
+    },
+    {
+        "name": "Derrick Henry",
+        "position": "RB",
+        "projPts": 15.6
+    },
+    {
+        "name": "Austin Ekeler",
+        "position": "RB",
+        "projPts": 15.2
+    },
+    {
+        "name": "Jonathan Taylor",
+        "position": "RB",
+        "projPts": 14.9
+    },
+    {
+        "name": "Josh Jacobs",
+        "position": "RB",
+        "projPts": 14.7
+    },
+    {
+        "name": "Nick Chubb",
+        "position": "RB",
+        "projPts": 14.5
+    },
+    {
+        "name": "Tony Pollard",
+        "position": "RB",
+        "projPts": 14.2
+    },
+    {
+        "name": "Joe Mixon",
+        "position": "RB",
+        "projPts": 13.8
+    },
+    {
+        "name": "Alvin Kamara",
+        "position": "RB",
+        "projPts": 13.6
+    },
+    {
+        "name": "Aaron Jones",
+        "position": "RB",
+        "projPts": 13.2
+    },
+    {
+        "name": "James Conner",
+        "position": "RB",
+        "projPts": 12.8
+    },
+    {
+        "name": "Rhamondre Stevenson",
+        "position": "RB",
+        "projPts": 12.5
+    },
+    {
+        "name": "D'Andre Swift",
+        "position": "RB",
+        "projPts": 12.2
+    },
+    {
+        "name": "Raheem Mostert",
+        "position": "RB",
+        "projPts": 12.0
+    },
+    {
+        "name": "Najee Harris",
+        "position": "RB",
+        "projPts": 11.9
+    },
+    {
+        "name": "Isiah Pacheco",
+        "position": "RB",
+        "projPts": 11.7
+    },
+    {
+        "name": "Kenneth Walker III",
+        "position": "RB",
+        "projPts": 11.5
+    },
+    {
+        "name": "Breece Hall",
+        "position": "RB",
+        "projPts": 11.2
+    },
+    {
+        "name": "David Montgomery",
+        "position": "RB",
+        "projPts": 10.9
+    },
+    {
+        "name": "Javonte Williams",
+        "position": "RB",
+        "projPts": 10.6
+    },
+    {
+        "name": "Alexander Mattison",
+        "position": "RB",
+        "projPts": 10.2
+    },
+    {
+        "name": "Justin Jefferson",
+        "position": "WR",
+        "projPts": 18.5
+    },
+    {
+        "name": "Ja'Marr Chase",
+        "position": "WR",
+        "projPts": 18.0
     },
     {
         "name": "Tyreek Hill",
@@ -30,9 +180,124 @@
         "projPts": 17.2
     },
     {
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "projPts": 16.5
+    },
+    {
+        "name": "Stefon Diggs",
+        "position": "WR",
+        "projPts": 15.9
+    },
+    {
+        "name": "Davante Adams",
+        "position": "WR",
+        "projPts": 15.5
+    },
+    {
+        "name": "AJ Brown",
+        "position": "WR",
+        "projPts": 15.3
+    },
+    {
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "projPts": 14.8
+    },
+    {
+        "name": "DeVonta Smith",
+        "position": "WR",
+        "projPts": 14.3
+    },
+    {
+        "name": "Tee Higgins",
+        "position": "WR",
+        "projPts": 13.8
+    },
+    {
+        "name": "DK Metcalf",
+        "position": "WR",
+        "projPts": 13.6
+    },
+    {
+        "name": "Chris Olave",
+        "position": "WR",
+        "projPts": 13.5
+    },
+    {
+        "name": "Mike Evans",
+        "position": "WR",
+        "projPts": 13.1
+    },
+    {
+        "name": "Keenan Allen",
+        "position": "WR",
+        "projPts": 12.9
+    },
+    {
+        "name": "Calvin Ridley",
+        "position": "WR",
+        "projPts": 12.7
+    },
+    {
+        "name": "Garrett Wilson",
+        "position": "WR",
+        "projPts": 12.5
+    },
+    {
+        "name": "Tyler Lockett",
+        "position": "WR",
+        "projPts": 12.2
+    },
+    {
+        "name": "Deebo Samuel",
+        "position": "WR",
+        "projPts": 12.0
+    },
+    {
+        "name": "Brandon Aiyuk",
+        "position": "WR",
+        "projPts": 11.8
+    },
+    {
+        "name": "DJ Moore",
+        "position": "WR",
+        "projPts": 11.6
+    },
+    {
+        "name": "Christian Kirk",
+        "position": "WR",
+        "projPts": 11.4
+    },
+    {
+        "name": "Drake London",
+        "position": "WR",
+        "projPts": 11.2
+    },
+    {
+        "name": "Michael Pittman Jr.",
+        "position": "WR",
+        "projPts": 11.0
+    },
+    {
+        "name": "Chris Godwin",
+        "position": "WR",
+        "projPts": 10.8
+    },
+    {
+        "name": "Amari Cooper",
+        "position": "WR",
+        "projPts": 10.6
+    },
+    {
         "name": "Travis Kelce",
         "position": "TE",
         "projPts": 15.3
+    },
+    {
+        "name": "Mark Andrews",
+        "position": "TE",
+        "projPts": 12.1
     },
     {
         "name": "George Kittle",
@@ -40,13 +305,113 @@
         "projPts": 11.0
     },
     {
+        "name": "Sam LaPorta",
+        "position": "TE",
+        "projPts": 10.5
+    },
+    {
+        "name": "Evan Engram",
+        "position": "TE",
+        "projPts": 9.8
+    },
+    {
+        "name": "Dallas Goedert",
+        "position": "TE",
+        "projPts": 9.5
+    },
+    {
+        "name": "Darren Waller",
+        "position": "TE",
+        "projPts": 9.2
+    },
+    {
+        "name": "Pat Freiermuth",
+        "position": "TE",
+        "projPts": 8.8
+    },
+    {
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "projPts": 8.5
+    },
+    {
+        "name": "Kyle Pitts",
+        "position": "TE",
+        "projPts": 8.3
+    },
+    {
+        "name": "Justin Tucker",
+        "position": "K",
+        "projPts": 8.5
+    },
+    {
+        "name": "Harrison Butker",
+        "position": "K",
+        "projPts": 8.0
+    },
+    {
         "name": "Jake Elliott",
         "position": "K",
-        "projPts": 8.2
+        "projPts": 7.8
+    },
+    {
+        "name": "Evan McPherson",
+        "position": "K",
+        "projPts": 7.6
+    },
+    {
+        "name": "Tyler Bass",
+        "position": "K",
+        "projPts": 7.4
+    },
+    {
+        "name": "Younghoe Koo",
+        "position": "K",
+        "projPts": 7.2
+    },
+    {
+        "name": "Daniel Carlson",
+        "position": "K",
+        "projPts": 7.1
+    },
+    {
+        "name": "49ers",
+        "position": "DST",
+        "projPts": 8.5
     },
     {
         "name": "Cowboys",
         "position": "DST",
+        "projPts": 8.0
+    },
+    {
+        "name": "Ravens",
+        "position": "DST",
+        "projPts": 7.9
+    },
+    {
+        "name": "Jets",
+        "position": "DST",
+        "projPts": 7.7
+    },
+    {
+        "name": "Bills",
+        "position": "DST",
         "projPts": 7.5
+    },
+    {
+        "name": "Chiefs",
+        "position": "DST",
+        "projPts": 7.3
+    },
+    {
+        "name": "Eagles",
+        "position": "DST",
+        "projPts": 7.1
+    },
+    {
+        "name": "Saints",
+        "position": "DST",
+        "projPts": 7.0
     }
 ]
