@@ -63,8 +63,20 @@ app.post('/optimize', (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
-app.get('/players', (_req, res) => {
-    const players = require('./players.json');
-    res.json(players);
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
+
+app.get('/players', async (_req, res) => {
+    try {
+        const players = await prisma.player.findMany();
+        res.json(players);
+    } catch (e) {
+        console.error(e);
+        res.status(500).json({ error: 'DB error' });
+    }
 });
-app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
+if (require.main === module) {
+    app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
+}
+
+module.exports = { app, optimize }; // make app & optimizer testable
