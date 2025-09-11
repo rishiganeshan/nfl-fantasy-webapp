@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Joh Allen",
+        "position": "QB",
+        "projPts": 22.4
+    },
+    {
+        "name": "Patrick Mahomes",
+        "position": "QB",
+        "projPts": 21.8
+    },
+    {
+        "name": "Christian McCaffrey",
+        "position": "RB",
+        "projPts": 20.1
+    },
+    {
+        "name": "Saquon Barkley",
+        "position": "RB",
+        "projPts": 16.8
+    },
+    {
+        "name": "Tyreek Hill",
+        "position": "WR",
+        "projPts": 19.0
+    },
+    {
+        "name": "CeeDee Lamb",
+        "position": "WR",
+        "projPts": 17.2
+    },
+    {
+        "name": "Travis Kelce",
+        "position": "TE",
+        "projPts": 15.3
+    },
+    {
+        "name": "George Kittle",
+        "position": "TE",
+        "projPts": 11.0
+    },
+    {
+        "name": "Jake Elliott",
+        "position": "K",
+        "projPts": 8.2
+    },
+    {
+        "name": "Cowboys",
+        "position": "DST",
+        "projPts": 7.5
+    }
+]
