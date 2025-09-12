@@ -9,6 +9,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
 }));
 
+app.get('/', (_req, res) => res.send('ok'));
 
 app.options('*', cors());
 
