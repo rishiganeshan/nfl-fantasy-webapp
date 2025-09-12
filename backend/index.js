@@ -71,8 +71,8 @@ app.post('/optimize', (req, res) => {
 const PORT = process.env.PORT || 8080;
 
 
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+// const { PrismaClient } = require('@prisma/client');
+// const prisma = new PrismaClient();
 
 // app.get('/players', async (_req, res) => {
 //     try {
