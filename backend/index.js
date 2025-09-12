@@ -3,15 +3,10 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors({
-    origin: '*',   // for debugging; later restrict to your S3 site
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type']
-}));
+app.use(cors()); // allow all origins for now; restrict later to your S3 bucket
 
+// Root route for EB health check
 app.get('/', (_req, res) => res.send('ok'));
-
-app.options('*', cors());
 
 app.use(express.json({ limit: '1mb' }));
 
