@@ -2,7 +2,11 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors()); // allow localhost frontend
+app.use(cors({
+    origin: '*',   // or be stricter: "http://nfl-fantasy-frontend.s3-website-eu-north-1.amazonaws.com"
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type']
+}));
 app.use(express.json({ limit: '1mb' }));
 
 // --- simple greedy optimizer ---
@@ -63,12 +67,16 @@ app.post('/optimize', (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
+
+
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 app.get('/players', async (_req, res) => {
     try {
-        const players = await prisma.player.findMany();
+        const players = await prisma.player.findMany({
+            orderBy: { name: 'asc' }
+        });
         res.json(players);
     } catch (e) {
         console.error(e);
