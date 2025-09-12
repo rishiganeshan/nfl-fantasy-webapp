@@ -3,7 +3,14 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors()); // allow all origins for now; restrict later to your S3 bucket
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    preflightContinue: false,
+    optionsSuccessStatus: 204
+}));
+app.options('*', cors());
 
 // Root route for EB health check
 app.get('/', (_req, res) => res.send('ok'));
@@ -85,9 +92,6 @@ const PORT = process.env.PORT || 8080;
 //         res.status(500).json({ error: 'DB error' });
 //     }
 // });
-// if (require.main === module) {
-//     app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
-// }
 app.get('/players', async (_req, res) => {
     res.json([
         { id: '1', name: 'Josh Allen', position: 'QB', projPts: 22.4 },
@@ -95,5 +99,9 @@ app.get('/players', async (_req, res) => {
         { id: '3', name: 'Justin Jefferson', position: 'WR', projPts: 19.8 }
     ]);
 });
+
+if (require.main === module) {
+    app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
+}
 
 module.exports = { app, optimize }; // make app & optimizer testable
