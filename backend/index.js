@@ -2,11 +2,16 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
+
 app.use(cors({
-    origin: '*',   // or be stricter: "http://nfl-fantasy-frontend.s3-website-eu-north-1.amazonaws.com"
+    origin: '*',   // for debugging; later restrict to your S3 site
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type']
 }));
+
+
+app.options('*', cors());
+
 app.use(express.json({ limit: '1mb' }));
 
 // --- simple greedy optimizer ---
