@@ -8,6 +8,7 @@ app.use(cors()); // allow all origins for now; restrict later to your S3 bucket
 // Root route for EB health check
 app.get('/', (_req, res) => res.send('ok'));
 
+
 app.use(express.json({ limit: '1mb' }));
 
 // --- simple greedy optimizer ---
@@ -73,19 +74,26 @@ const PORT = process.env.PORT || 8080;
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
+// app.get('/players', async (_req, res) => {
+//     try {
+//         const players = await prisma.player.findMany({
+//             orderBy: { name: 'asc' }
+//         });
+//         res.json(players);
+//     } catch (e) {
+//         console.error(e);
+//         res.status(500).json({ error: 'DB error' });
+//     }
+// });
+// if (require.main === module) {
+//     app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
+// }
 app.get('/players', async (_req, res) => {
-    try {
-        const players = await prisma.player.findMany({
-            orderBy: { name: 'asc' }
-        });
-        res.json(players);
-    } catch (e) {
-        console.error(e);
-        res.status(500).json({ error: 'DB error' });
-    }
+    res.json([
+        { id: '1', name: 'Josh Allen', position: 'QB', projPts: 22.4 },
+        { id: '2', name: 'Christian McCaffrey', position: 'RB', projPts: 20.1 },
+        { id: '3', name: 'Justin Jefferson', position: 'WR', projPts: 19.8 }
+    ]);
 });
-if (require.main === module) {
-    app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
-}
 
 module.exports = { app, optimize }; // make app & optimizer testable
