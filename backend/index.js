@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -10,7 +11,8 @@ app.use(cors({
     preflightContinue: false,
     optionsSuccessStatus: 204
 }));
-app.options('*', cors());
+// app.use(cors)
+// app.options('*', cors());
 
 // Root route for EB health check
 app.get('/', (_req, res) => res.send('ok'));
@@ -75,7 +77,6 @@ app.post('/optimize', (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 8080;
 
 
 // const { PrismaClient } = require('@prisma/client');
@@ -92,12 +93,10 @@ const PORT = process.env.PORT || 8080;
 //         res.status(500).json({ error: 'DB error' });
 //     }
 // });
-app.get('/players', async (_req, res) => {
-    res.json([
-        { id: '1', name: 'Josh Allen', position: 'QB', projPts: 22.4 },
-        { id: '2', name: 'Christian McCaffrey', position: 'RB', projPts: 20.1 },
-        { id: '3', name: 'Justin Jefferson', position: 'WR', projPts: 19.8 }
-    ]);
+
+app.get('/players', (_req, res) => {
+    const players = require('./players.json');
+    res.json(players);
 });
 
 if (require.main === module) {
