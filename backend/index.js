@@ -79,25 +79,25 @@ app.post('/optimize', (req, res) => {
 
 
 
-// const { PrismaClient } = require('@prisma/client');
-// const prisma = new PrismaClient();
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
 
-// app.get('/players', async (_req, res) => {
-//     try {
-//         const players = await prisma.player.findMany({
-//             orderBy: { name: 'asc' }
-//         });
-//         res.json(players);
-//     } catch (e) {
-//         console.error(e);
-//         res.status(500).json({ error: 'DB error' });
-//     }
-// });
-
-app.get('/players', (_req, res) => {
-    const players = require('./players.json');
-    res.json(players);
+app.get('/players', async (_req, res) => {
+    try {
+        const players = await prisma.player.findMany({
+            orderBy: { name: 'asc' }
+        });
+        res.json(players);
+    } catch (e) {
+        console.error(e);
+        res.status(500).json({ error: 'DB error' });
+    }
 });
+
+// app.get('/players', (_req, res) => {
+//     const players = require('./players.json');
+//     res.json(players);
+// });
 
 if (require.main === module) {
     app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
